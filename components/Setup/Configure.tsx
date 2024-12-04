@@ -56,8 +56,8 @@ export const Configure: React.FC<ConfigureProps> = React.memo(
           <section className="flex flex-col gap-4 border-y border-primary-hairline py-4">
             <div className="flex flex-row justify-between items-center">
               <Label className="flex flex-row gap-1 items-center">
-                Join with mic muted{" "}
-                <HelpTip text="Start with microphone muted (click to unmute)" />
+                Unirse con micrófono silenciado{" "}
+                <HelpTip text="Comenzar con el micrófono silenciado (haz clic para activar)" />
               </Label>
               <Switch
                 checked={startAudioOff}
@@ -74,4 +74,4 @@ export const Configure: React.FC<ConfigureProps> = React.memo(
     prevProps.state === nextProps.state
 );
 
-Configure.displayName = "Configure";
+Configure.displayName = "Configurar";
